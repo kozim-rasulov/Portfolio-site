@@ -9,6 +9,7 @@
         padding-left: 10px;
         @include before_circle;
         z-index: 1;
+        color: $promo-color;
     }
     &__title {
         width: 535px;

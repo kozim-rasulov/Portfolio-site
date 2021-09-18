@@ -11,10 +11,15 @@
     margin: 0;
     padding: 0;
 }
-
 .container {
     width: 1140px;
     margin: 0 auto;
+}
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+    margin-top: 25px;
 }
 
 @import 'blocks/title';
@@ -24,5 +29,7 @@
 @import 'blocks/promo';
 @import 'blocks/sidepanel';
 @import 'blocks/social';
+@import 'blocks/about';
+
 
 

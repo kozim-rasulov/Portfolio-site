@@ -8,6 +8,9 @@
     justify-content: space-between;
     align-items: flex-end;
     cursor: pointer;
+    &.d-none {
+        display: none;
+    }
     span {
         display: block;
         width: 30px;
