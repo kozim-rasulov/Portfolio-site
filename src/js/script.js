@@ -10,3 +10,10 @@ close.addEventListener('click', () => {
     menu.classList.remove('active'),
     hamburger.classList.remove('d-none');
 });
+
+const percents = document.querySelectorAll('.skills__progress-percent'),
+      lines = document.querySelectorAll('.skills__progress-line span');
+
+percents.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+});
