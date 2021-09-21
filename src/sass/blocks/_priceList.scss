@@ -2,8 +2,8 @@
     margin-top: 66px;
     &__wrapper {
         display: grid;
-        grid-template: repeat(1, 44px) / repeat(2, 370px);
-        grid-auto-rows: 44px;
+        grid-template: repeat(1, minmax(44px, auto)) / repeat(2, 370px);
+        grid-auto-rows: minmax(44px, auto);
         row-gap: 15px;
         justify-content: space-between;
         margin-top: 60px;
@@ -11,9 +11,8 @@
     }
     &__item {
         display: grid;
-        grid-template: 21px 18px / 215px 125px;
-        justify-content: space-between;
-        align-content: space-between;
+        grid-template: 21px minmax(18px, auto) / repeat(2, auto);
+        row-gap: 5px;
         padding-left: 25px;
     }
     &__title {
@@ -35,7 +34,7 @@
     &__price {
         font-weight: 700;
         font-size: 14px;
-        text-align: right;
+        justify-self: end;
     }
     &__descr {
         font-size: 12px;
