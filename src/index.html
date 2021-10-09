@@ -119,7 +119,18 @@
         <section class="about">
             <div class="container">
                 <div class="about__wrapper">
-                    <img src="img/main_photo.jpg" alt="photo" class="about__photo">
+                    <!-- <img    srcset="img/main_photo-min.jpg 300w,
+                                img/main_photo.jpg 400w"
+                            sizes="(max-width: 576px) 280px,
+                               (min-width: 577px) 400px" 
+                            src="img/main_photo.jpg" alt="photo" class="about__photo"> -->
+                    
+                    <picture class="about__photo">
+                        <source media="(max-width: 576px)" srcset="img/main_photo-min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/main_photo.jpg">
+                        <img src="img/main_photo.jpg" alt="photo">
+                    </picture>
+                    
                     <div class="about__descr">
                         <h2 class="title title_fz16 about__title">Про меня</h2>
                         <p class="title about__subtitle">Меня зовут Козим</p>
@@ -359,7 +370,7 @@
             </div>
         </section>
 
-        <section class="portfolio">
+        <!-- <section class="portfolio">
             <div class="container">
                 <h2 class="title title_fz16 title_section-title">Портфолио</h2>
                 <p class="title title_section-subtitle">Мои работы</p>
@@ -373,9 +384,9 @@
                     <a href="#" class="portfolio__item"><img src="img/works/uber.jpg" alt="teste"></a>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section class="priceList">
+        <!-- <section class="priceList">
             <div class="container">
                 <h2 class="title title_fz16 title_section-title">Прайс-лист</h2>
                 <div class="divider"></div>
@@ -412,9 +423,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section class="contacts">
+        <!-- <section class="contacts">
             <div class="container">
                 <div class="contacts__wrapper">
                     <img src="img/main_photo.jpg" alt="photo" class="contacts__photo">
@@ -452,14 +463,14 @@
                                 <button class="button contacts__button">Отправить сообщение</button>
                                 <p class="contacts__policy">
                                     <input required type="checkbox">
-                                    <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                                    <span>Я согласен(а) с <a href="/policy.html" target="blank">политикой конфиденциальности</a></span>
                                 </p>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
 
